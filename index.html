@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nithilasivakumar | Blockchain Developer</title>
+
+  <title>Nithilasivakumar | Blockchain Developer</title>
 
   <style>
     * {
@@ -27,6 +28,7 @@
       background: #111831;
       position: sticky;
       top: 0;
+      z-index: 100;
     }
 
     header h2 {
@@ -52,6 +54,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: flex-start;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 25px;
+      border: 4px solid #6c63ff;
     }
 
     .hero h1 {
@@ -105,11 +117,27 @@
       background: #111831;
       color: #aaa;
     }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 5px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
     <h2>Nithilasivakumar</h2>
 
@@ -121,7 +149,16 @@
     </nav>
   </header>
 
+
+  <!-- Home -->
   <section class="hero">
+
+    <img
+      src="nithila.jpg"
+      alt="Nithilasivakumar"
+      class="profile-photo"
+    >
+
     <h1>Hi, I'm <span>Nithilasivakumar</span></h1>
 
     <p>
@@ -130,9 +167,13 @@
     </p>
 
     <a href="#projects" class="btn">View My Projects</a>
+
   </section>
 
+
+  <!-- About -->
   <section id="about">
+
     <h2>About Me</h2>
 
     <div class="card">
@@ -142,12 +183,17 @@
         that solve real-world problems.
       </p>
     </div>
+
   </section>
 
+
+  <!-- Skills -->
   <section id="skills">
+
     <h2>Skills</h2>
 
     <div class="card skills">
+
       <span>Blockchain</span>
       <span>Web3</span>
       <span>HTML</span>
@@ -155,41 +201,83 @@
       <span>JavaScript</span>
       <span>Solidity</span>
       <span>Git & GitHub</span>
+
     </div>
+
   </section>
 
+
+  <!-- Projects -->
   <section id="projects">
+
     <h2>Projects</h2>
 
     <div class="card">
+
       <h3>Blockchain Project</h3>
+
       <p>
         A blockchain-based project demonstrating decentralized
         technology and smart contract concepts.
       </p>
+
     </div>
+
 
     <div class="card">
+
       <h3>Web3 Portfolio</h3>
+
       <p>
-        Personal portfolio website focused on Blockchain and Web3
-        development.
+        Personal portfolio website focused on Blockchain and
+        Web3 development.
       </p>
+
     </div>
+
   </section>
 
+
+  <!-- Contact -->
   <section id="contact">
+
     <h2>Contact</h2>
 
     <div class="card">
+
       <p>Email: snithila76@gmail.com</p>
-      <p>GitHub: github.com/yourusername</p>
+
+      <p>
+        GitHub:
+        <a
+          href="https://github.com/snithila76"
+          target="_blank"
+          style="color:#6c63ff;"
+        >
+          github.com/snithila76
+        </a>
+      </p>
+
     </div>
+
   </section>
 
+
+  <!-- Footer -->
   <footer>
+
     <p>© 2026 Nithilasivakumar | Blockchain Developer</p>
+
   </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+    
+    
